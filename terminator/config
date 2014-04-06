@@ -1,0 +1,29 @@
+[global_config]
+  enabled_plugins = ,
+  focus = mouse
+  inactive_color_offset = 1.0
+  tab_position = bottom
+[keybindings]
+[profiles]
+  [[default]]
+    scrollbar_position = hidden
+    palette = "#262626:#ff0000:#00d400:#fb6400:#0066ff:#8900ff:#00d4aa:#b3b3b3:#1c1c1c:#aa0000:#296700:#aa4400:#0044aa:#611d9c:#008066:#808080"
+    background_image = None
+    cursor_shape = underline
+    use_system_font = False
+    cursor_color = "#fb6400"
+    foreground_color = "#b3b3b3"
+    icon_bell = False
+    show_titlebar = False
+    font = Terminus 9
+    background_color = "#1c1c1c"
+    cursor_blink = False
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
