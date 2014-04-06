@@ -1,0 +1,26 @@
+# conky configuration
+#
+# The list of variables has been removed from this file in favour
+# of keeping the documentation more maintainable.
+# Check http://conky.sf.net for an up-to-date-list.
+#
+# For ideas about how to modify conky, please see:
+# http://crunchbanglinux.org/forums/topic/59/my-conky-config/
+#
+# For help with conky, please see:
+# http://crunchbanglinux.org/forums/topic/2047/conky-help/
+#
+# Enjoy! :)
+##############################################
+# Settings
+##############################################
+background no
+out_to_console yes
+out_to_x no
+update_interval 1
+total_run_times 0
+mpd_host localhost
+mpd_port 6600
+
+TEXT
+MPD: [ ${mpd_status}${if_mpd_playing}- ${mpd_elapsed}/${mpd_length}$endif ] ${mpd_title} by ${mpd_artist} from ${mpd_album}  Cpu: ${cpu}%  Mem: ${memperc}%  Net: ${downspeedf eth0} / ${upspeedf eth0}  ${time %a %b %d %H:%M}

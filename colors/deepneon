@@ -1,0 +1,35 @@
+!black
+! *color0:     #AF875F
+! *color8:     #AF875F
+*color0:     #101010
+*color8:     #404040
+!red
+*color1:     #E84F4F
+*color9:     #D23D3D
+!green
+*color2:     #B8D68C
+*color10:    #A0CF5D
+!yellow
+*color3:     #E1AA5D
+*color11:    #F39D21
+!blue
+*color4:     #7DC1CF
+*color12:    #4E9FB1
+!magenta
+*color5:     #9B64FB
+*color13:    #8542FF
+!cyan
+*color6:     #6D878D
+*color14:    #42717B
+!white
+*color7:     #dddddd
+*color15:    #dddddd
+
+URxvt*borderColor:        #151515
+URxvt*colorBD:            #ffffff
+URxvt*cursorColor:        #ff8939
+URxvt*cursorColor2:       #151515
+
+    palette = "#101010:#E84F4F:#B8D68C:#E1AA5D:#7DC1CF:#9B64FB:#6D878D:#dddddd:#404040:#D23D3D:#A0CF5D:#F39D21:#4E9FB1:#8542FF:#42717B:#dddddd"
+
+    blues:     palette = "#333366:#6666cc:#0099cc:#3366cc:#006699:#0066ff:#669999:#99cccc:#333399:#9999ff:#00ccff:#6699ff:#0099cc:#0099ff:#66cccc:#ccffff"

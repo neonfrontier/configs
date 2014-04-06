@@ -1,0 +1,144 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+ @-moz-document url-prefix('chrome://') { 
+
+TabsToolbar 
+{
+    height: 13px !important;
+    box-shadow: ThreeDShadow 0 -1px inset !important;
+    background-image: none !important;
+    -moz-appearance: none !important;
+    opacity:.85 !important;
+}
+
+.tabbrowser-tab 
+{
+    min-height: 10px !important;
+    margin-top: 2px !important;
+    padding: 0 4px 1px 3px !important;
+    background-image: none !important;
+    -moz-appearance: tab !important;
+    color: rgba(122, 122, 122, 1.0) !important;
+    margin-right: -2px !important;
+    opacity:.85 !important;
+}
+.tabs-newtab-button
+{
+    min-height: 10px !important;
+    margin-top: 2px !important;
+    padding: 0 4px 1px 3px !important;
+    background-image: none !important;
+    -moz-appearance: tab !important;
+    color: rgba(122, 122, 122, 1.0) !important;
+    margin-right: -2px !important;
+    opacity:.85 !important;
+}
+
+.tabbrowser-tab[selected=true] 
+{
+    margin-top: 0 !important;
+    min-height: 12px !important;
+    margin-bottom: 0px !important;
+    padding: 2px 4px 3px 3px !important;
+    position: relative !important;
+    color: rgba(249, 249, 249, 1.0) !important;
+    opacity:.85 !important;
+}
+.tabbrowser-tab[pinned] + .tabbrowser-tab:not([pinned]), .tabbrowser-tab[pinned] 
+{
+    padding: 0 5px 0 3px !important;
+    margin-right: -2px !important;
+    min-height: 20px !important;
+}
+.tabbrowser-tab[selected=true][pinned] 
+{
+    min-height: 7px !important;
+    padding-right: 5px !important;
+    padding-left: 3px !important;
+    min-height: 13px !important;
+}
+.tabbrowser-tab[pinned][titlechanged]:not([selected="true"]) 
+{
+    box-shadow: 0 0 0 1em #BCDAEE inset !important;
+}
+.tabbrowser-tab[pinned] .tab-icon-image 
+{
+    margin-top: -1px !important;
+}
+.tabbrowser-tab[selected=true][pinned] .tab-icon-image 
+{
+    margin-top: -2px !important;
+}
+.tabbrowser-tab[selected=true] .tab-icon-image 
+{
+    margin-top: -1px !important;
+}
+.tabbrowser-tab[selected=true] .tab-text 
+{
+    margin-top: -1px !important;
+}
+.tabbrowser-tab[selected=true] .tab-close-button 
+{
+    margin-bottom: 1px !important;
+}
+.tab-throbber[progress][selected=true], .tab-throbber[busy][selected=true]
+{
+    margin-top: -1px !important;
+}
+.tab-throbber[progress][pinned][selected=true], .tab-throbber[busy][pinned][selected=true]
+{
+    margin-top: -1px !important;
+}
+.tabbrowser-tab[pinned] + .tabbrowser-tab:not([pinned]) .tab-icon-image 
+{
+    margin-top: -2px !important;
+}
+.tabbrowser-tab:not([selected=true])
+{
+    margin-bottom: 1px !important;
+}
+
+.tabbrowser-tab[pinned] + .tabbrowser-tab:not([pinned]) .tab-close-button 
+{
+    margin-top: -2px !important;
+}
+
+
+.toolbar-primary.chromeclass-toolbar, #PersonalToolbar, #customToolbars, #navigator-toolbox .chromeclass-toolbar 
+{
+    -moz-appearance: toolbar !important;
+}
+
+.toolbar-primary.chromeclass-toolbar:-moz-lwtheme, #PersonalToolbar:-moz-lwtheme, #customToolbars:-moz-lwtheme, #navigator-toolbox .chromeclass-toolbar:-moz-lwtheme 
+{
+    -moz-appearance: none !important;
+}
+
+.tabbrowser-tab:-moz-lwtheme:not([selected="true"])
+{ 
+    opacity:.85 !important;
+}
+
+toolbar-menubar
+{
+    padding: 0 !important;
+}
+
+main-window tabbrowser-tabs tab .tab-throbber,
+main-window tabbrowser-tabs tab .tab-icon-image
+{
+    max-height:2px!important;
+    max-width:2px!important;
+}
+    
+#identity-box,
+#urlbar-icons > image,
+#urlbar-container dropmarker,
+#new-tab-button .toolbarbutton-icon,
+#appmenu-toolbar-button > .toolbarbutton-menu-dropmarker,
+tabbrowser-tabs tab .tab-close-button .toolbarbutton-icon,
+.tabs-newtab-icon
+{
+    display:none!important;
+}
+}
+
